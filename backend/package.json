@@ -1,0 +1,25 @@
+{
+  "name": "fsd-vaccine-backend",
+  "version": "1.0.0",
+  "description": "Smart Cold-Chain Monitoring and Response Platform Backend",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "seed": "node src/db/seed.js",
+    "migrate": "node src/db/migrateSqliteToMongo.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^7.6.0",
+    "mongoose": "^9.10.3",
+    "multer": "^1.4.5-lts.1",
+    "ws": "^8.18.0"
+  }
+}

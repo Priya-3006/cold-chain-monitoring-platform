@@ -1,0 +1,23 @@
+{
+  "name": "fsd-vaccine",
+  "version": "1.0.0",
+  "description": "Smart Cold-Chain Monitoring and Response Platform for Vaccines and Temperature-Sensitive Medicines",
+  "main": "backend/src/server.js",
+  "scripts": {
+    "start": "node backend/src/server.js",
+    "seed": "npm --prefix backend run seed",
+    "test": "npm --prefix backend test",
+    "backend": "npm --prefix backend start",
+    "frontend": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build"
+  },
+  "keywords": [
+    "cold-chain",
+    "vaccine-monitoring",
+    "iot",
+    "mkt",
+    "who-gdp"
+  ],
+  "author": "Smart Cold-Chain Healthcare IoT Team",
+  "license": "ISC"
+}
