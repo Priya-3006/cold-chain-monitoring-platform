@@ -18,7 +18,7 @@ router.use(authenticateToken);
 router.get('/tasks', requireRole(['Warehouse Employee', 'Manager', 'Admin']), async (req, res) => {
   try {
     const shipments = await col('shipments')
-      .find({ status: { $in: ['CREATED', 'PICKED', 'PUT_AWAY', 'LOADED'] } })
+     .find({ status: { $in: ['CREATED', 'PICKED', 'PUT_AWAY', 'LOADED', 'COMPLETED', 'GPS_TRACKING', 'IN_TRANSIT'] } })
       .sort({ created_at: 1 })
       .toArray();
 
